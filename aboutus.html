@@ -8,7 +8,7 @@
   <meta name="description" content="">
   <meta name="author" content="Mark Otto, Jacob Thornton, and Bootstrap contributors">
   <meta name="generator" content="Hugo 0.122.0">
-  <title>Y-spot</title>
+  <title>OM-Stay</title>
   <link rel="icon" type="image/x-icon" href="assets/img/favicon.png">
   <link rel="canonical" href="https://getbootstrap.com/docs/5.3/examples/jumbotron/">
 
@@ -110,7 +110,7 @@
 
 <body>
   <header>
-    <nav class="navbar navbar-expand topbarstatic-top" style="background-color: #FF1717;">
+    <nav class="navbar navbar-expand topbarstatic-top" style="background-color: #036A01;">
       <!-- First column -->
       <div class="container">
         <div class="row w-100">
@@ -118,18 +118,18 @@
           <!-- Second column -->
           <div class="col-12 col-md-5 col-lg-4 d-flex justify-content-center align-items-center">
             <a class="navbar-brand" href="index.html">
-              <img src="assets/img/Frame 223.png" alt="" class="d-inline-block align-top">
+              <img src="assets/img/Frame 223.png" alt="" class="d-inline-block align-top" style="width: 150px;">
             </a>
           </div>
           <!-- Third column -->
           <div class="col-12 col-md-7 col-lg-4 d-flex justify-content-center align-items-center mt-2">
-            <a class="nav-link px-2" href="../login/signup.html" id="registerLink">
+            <a class="nav-link px-2" href="./index.html" id="registerLink">
               <button id="registerButton" type="button" class="btn btn-light text-danger"
                 style="height: 30px; display: flex; align-items: center; justify-content: center;">
                 <b>Register</b>
               </button>
             </a>
-            <a class="nav-link px-2" href="../login/index.html" id="loginLink">
+            <a class="nav-link px-2" href="./index.html" id="loginLink">
               <button id="loginButton" type="button" class="btn btn-light text-danger"
                 style="height: 30px; display: flex; align-items: center; justify-content: center;">
                 <b>Login</b>
@@ -172,7 +172,7 @@
         </div>
       </div>
     </nav>
-    <div class="" id="included-confiremationheader"></div>
+    <div class="" id="included-aboutusheader"></div>
   </header>
     <main>        
     </main>
@@ -234,7 +234,7 @@
     <div class="horizantal-line">
 
     </div>
-    <h6 class="text-end mx-5 pt-3">&copy; 2023 Y.SPOT Rooms pvt .ltd.</h6>
+    <h6 class="text-end mx-5 pt-3">&copy; 2023 OM-Stay pvt .ltd.</h6>
   </footer>
   <script src="https://cdn.jsdelivr.net/npm/flatpickr"></script>
   <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
@@ -251,7 +251,7 @@
   <!-- Your HTML code for the form -->
 
   <!-- Include Flatpickr JavaScript -->
-
+<!-- <img src="./includes/confiremationheader.html" alt=""> -->
   <!-- index page script for navbar section  start  -->
   <script type="module">
     import { initializeApp } from "https://www.gstatic.com/firebasejs/10.0.0/firebase-app.js";
@@ -322,7 +322,7 @@
       const loadContent = async () => {
         try {
           const [headerData, footerData] = await Promise.all([
-            fetchContent('includes/aboutusheader.html'),
+            fetchContent('./includes/aboutusheader.html'),
             fetchContent('includes/footer.html')
           ]);
 
